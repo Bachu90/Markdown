@@ -8,22 +8,19 @@ import placeholder from './placeholder';
 
 class App extends Component {
   
-  
-
   state ={
     markdown: placeholder,
-    letters: placeholder.length
   }
 
   handleChange = (e) => {
-    const markdown = e.target.value ? e.target.value : placeholder;
+    const markdown = e.target.value;
     this.setState({
       markdown,
     })
   }
 
   handleToolClick = (e) => {
-    alert('Funkcja w fazie rozwoju');
+    alert('Function available soon...');
   }
 
   render() {

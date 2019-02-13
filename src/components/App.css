@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+body {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.editor-box {
+  flex-basis: 50%;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.title-bar {
+  background-color: #ccc;
+  text-align: center;
+  color: #666;
+  padding: 10px 0;
+}
+
+#editor {
+  display: block;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  margin: 20px auto;
+  border: 1px solid #1da1f2;
+
+}
+
+#editor , #preview {
+  padding: 20px;
+}
+
+.toolbar {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.toolbar button:hover {
+  color: #1da1f2;
+}
+
+.toolbar span {
+  font-size: 16px;
+  color: #bbb;
+  padding-left: 20px;
+  line-height: 18px;
+}

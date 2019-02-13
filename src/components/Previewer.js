@@ -9,7 +9,7 @@ marked.setOptions({
 // INSERTS target="_blank" INTO HREF TAGS (required for codepen links)
 const renderer = new marked.Renderer();
 renderer.link = function (href, title, text) {
-  return `<a target="_blank" href="${href}">${text}` + '</a>';
+  return `<a target="_blank" href="${href}">${text}</a>`;
 }
 
 const Previewer = props => {

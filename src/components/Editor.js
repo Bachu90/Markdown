@@ -3,10 +3,10 @@ import Toolbar from './Toolbar';
 
 const Editor = props => {
     return(
-        <div class="editor-box">
+        <div className="editor-box">
             <header className="title-bar">Markdown Editor</header>
-            <Toolbar letters={props.letters} />
-            <textarea id="editor" placeholder={props.placeholder} onChange={props.handleChange}/>
+            <Toolbar letters={props.markdown.length} handleClick={props.handleToolClick} />
+            <textarea id="editor" onChange={props.handleChange} placeholder={props.placeholder}/>
         </div>
     )
 }
